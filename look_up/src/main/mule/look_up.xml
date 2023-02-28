@@ -28,5 +28,6 @@ Mule::lookup('flow2', {test:'hello '})]]></ee:set-payload>
   <logger level="INFO" doc:name="Logger" message='#[payload]'/>
   <set-payload value='#[payload.test ++ "world"]' doc:name="Set Payload" />
   <logger level="INFO" doc:name="Logger" message='#[payload]'/>
+  <set-payload value='#[payload.test ++ "world"]' doc:name="Set Payload" />
 </flow>
 	</mule>
